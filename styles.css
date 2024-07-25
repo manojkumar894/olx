@@ -20,8 +20,45 @@
     width: 80px;
     height: 60px;
 }
-.search-container {
+/* .search-container {
 display: flex;
+} */
+
+.search-container {
+    display: flex;
+    align-items: center;
+    /* background-color: #fff; */
+    /* border-radius: 25px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px; */
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+}
+
+#location-search {
+    border: 2px solid #002F34;
+    padding: 10px 40px 10px 20px; /* Add padding for the icon */
+    font-size: 16px;
+    /* border-radius: 20px; */
+    outline: none;
+    width: 100%;
+}
+
+#location-search::placeholder {
+    color: #999;
+}
+
+.search-logo {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    /* pointer-events: none; */
+    color: #999;
+    cursor: pointer;
 }
 .search-container input {
     width: 200px;
@@ -36,7 +73,7 @@ display: flex;
     width: 800px;
     height:3rem;
     background-color: #FFFFFF;
-    border: 3px solid black;
+    border: 2px solid #002F34;
 }
 .product-search-btn i {
     background-color: black;
@@ -47,6 +84,14 @@ display: flex;
     cursor: pointer;
     padding: 12px 8px;
     
+}
+.search-logo i {
+    /* color: white; */
+    width: 40px;
+    height: 3rem;
+    /* padding: 2px; */
+    cursor: pointer;
+    padding: 12px 8px;
 }
 .alllanguage {
 display: flex;
@@ -70,6 +115,7 @@ font-size: large;
     margin-left: 20px;
     font-size: large;
     font-weight: 700;
+    text-decoration: underline;
 }
 .sell {
     display: flex;
